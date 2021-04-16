@@ -1,0 +1,2 @@
+﻿Hi, do you have the book {0} by any chance?
+Hi, I would like to get {0}.
