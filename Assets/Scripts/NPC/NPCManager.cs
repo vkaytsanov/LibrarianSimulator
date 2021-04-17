@@ -1,4 +1,5 @@
 ﻿using System;
+using Book;
 using UnityEngine;
 
 namespace NPC
@@ -8,20 +9,17 @@ namespace NPC
         [SerializeField] 
         private Sprite[] sprites;
         [SerializeField] 
-        private GameObject prefab;
-
-        private GameObject current;
+        private GameObject npcPrefab;
         private NPC _npcComponent;
         
-        private SpriteRenderer npcSpriteRenderer;
+        private SpriteRenderer _npcSpriteRenderer;
 
-        private Vector3 spawnVector;
+        private Vector3 _spawnVector;
         
         private void Start()
         {
-            spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(-0.5f, 0.75f, 0.5f));
-            current = Instantiate(prefab, spawnVector, Quaternion.identity);
-            _npcComponent = current.GetComponent<NPC>();
+            _spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(-0.5f, 0.75f, 0.5f));
+            _npcComponent = npcPrefab.GetComponent<NPC>();
             Spawn();
         }
         
@@ -29,6 +27,8 @@ namespace NPC
         public void Spawn()
         {
             GenerateRandomNPC();
+            GenerateRandomAction();
+
             _npcComponent.SetToComing();
         }
 
@@ -41,10 +41,16 @@ namespace NPC
         {
             
         }
-        
-        public string GenerateRandomDialogue()
+
+        private void GenerateRandomAction()
         {
-            throw new NotImplementedException();
+            // TODO
+            _npcComponent.action = NPCAction.WantingBook;
+
+            if (_npcComponent.action == NPCAction.WantingBook)
+            {
+                _npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
+            }
         }
     }
 }

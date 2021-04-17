@@ -22,16 +22,23 @@ namespace Book
                     string bookAuthor = sr.ReadLine();
 
                     _fictions.Add(new BookCharacteristics(bookTitle, bookAuthor));
+                    
                 }
 
-                Console.WriteLine();
+                _fictions.Sort();
             }
 
         }
 
-        static BookCharacteristics GetRandomFictionBookCharacteristics()
+        public static BookCharacteristics GetRandomFictionBookCharacteristics()
         {
             return _fictions[random.Next(_fictions.Count)];
+        }
+
+        public static bool SearchForBook(string query)
+        {
+            
+            return _fictions.BinarySearch(new BookCharacteristics(query, null)) < 0;
         }
     }
 }

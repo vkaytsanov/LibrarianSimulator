@@ -1,0 +1,3564 @@
+fileFormatVersion: 2
+guid: 1acf16f9331d4fb4b884fdd41da263e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8266589518048551888
+    second: books2_0
+  - first:
+      213: 9029980930886714859
+    second: books2_1
+  - first:
+      213: -5294607874175762884
+    second: books2_2
+  - first:
+      213: -2895912422409565373
+    second: books2_3
+  - first:
+      213: -3046981799385523619
+    second: books2_4
+  - first:
+      213: 6459032312802545703
+    second: books2_5
+  - first:
+      213: 7633781374155739557
+    second: books2_6
+  - first:
+      213: 8197262855596861208
+    second: books2_7
+  - first:
+      213: -823996107372838314
+    second: books2_8
+  - first:
+      213: -579642644444016578
+    second: books2_9
+  - first:
+      213: -3447500179831136860
+    second: books2_10
+  - first:
+      213: 6917107770076264603
+    second: books2_11
+  - first:
+      213: 3166428613154319816
+    second: books2_12
+  - first:
+      213: -6256434590169388860
+    second: books2_13
+  - first:
+      213: -7384692941361489138
+    second: books2_14
+  - first:
+      213: 4011989260497763977
+    second: books2_15
+  - first:
+      213: -8528547365094603571
+    second: books2_16
+  - first:
+      213: 7928037059333074449
+    second: books2_17
+  - first:
+      213: 305878232277221828
+    second: books2_18
+  - first:
+      213: -4407083737826947329
+    second: books2_19
+  - first:
+      213: -4678573810619550931
+    second: books2_20
+  - first:
+      213: -2995020727935515339
+    second: books2_21
+  - first:
+      213: -2510234360412854386
+    second: books2_22
+  - first:
+      213: -5065839339894268512
+    second: books2_23
+  - first:
+      213: -3127693543258674564
+    second: books2_24
+  - first:
+      213: 4639354890890238220
+    second: books2_25
+  - first:
+      213: -4105894217780944275
+    second: books2_26
+  - first:
+      213: -3562423733607039532
+    second: books2_27
+  - first:
+      213: 9160076035303925571
+    second: books2_28
+  - first:
+      213: 8425216999572978015
+    second: books2_29
+  - first:
+      213: -8894433122970470053
+    second: books2_30
+  - first:
+      213: -8073223500670488147
+    second: books2_31
+  - first:
+      213: 7562110155939654751
+    second: books2_32
+  - first:
+      213: -1391286444956114246
+    second: books2_33
+  - first:
+      213: -5700270851812564721
+    second: books2_34
+  - first:
+      213: -8719471123515587521
+    second: books2_35
+  - first:
+      213: 4408485343141372017
+    second: books2_36
+  - first:
+      213: 4896208065370970385
+    second: books2_37
+  - first:
+      213: 2666007167570424000
+    second: books2_38
+  - first:
+      213: -4765744221394466513
+    second: books2_39
+  - first:
+      213: -9104790645560828107
+    second: books2_40
+  - first:
+      213: 1783716709436703989
+    second: books2_41
+  - first:
+      213: 7193580378570041918
+    second: books2_42
+  - first:
+      213: -2847506658899824744
+    second: books2_43
+  - first:
+      213: 19279899353702659
+    second: books2_44
+  - first:
+      213: -8924936693173671398
+    second: books2_45
+  - first:
+      213: -2409851778947466431
+    second: books2_46
+  - first:
+      213: -9117829453295584105
+    second: books2_47
+  - first:
+      213: -37443171722121150
+    second: books2_48
+  - first:
+      213: -8783306915959619299
+    second: books2_49
+  - first:
+      213: 3972785517948745669
+    second: books2_50
+  - first:
+      213: 6698420816567920577
+    second: books2_51
+  - first:
+      213: -7424053211749756432
+    second: books2_52
+  - first:
+      213: -2959263016745974742
+    second: books2_53
+  - first:
+      213: -6117025979485484969
+    second: books2_54
+  - first:
+      213: -1138330506336888453
+    second: books2_55
+  - first:
+      213: -7222188996774742709
+    second: books2_56
+  - first:
+      213: 3582872060240232159
+    second: books2_57
+  - first:
+      213: -2337342493332623326
+    second: books2_58
+  - first:
+      213: -6143965954326070291
+    second: books2_59
+  - first:
+      213: -2601899872482910160
+    second: books2_60
+  - first:
+      213: -4335370497593859800
+    second: books2_61
+  - first:
+      213: -3018863065362700717
+    second: books2_62
+  - first:
+      213: -2975518375294970920
+    second: books2_63
+  - first:
+      213: -6633760368353561743
+    second: books2_64
+  - first:
+      213: -6834268904969779549
+    second: books2_65
+  - first:
+      213: -4010796301431910806
+    second: books2_66
+  - first:
+      213: -3778832588796609700
+    second: books2_67
+  - first:
+      213: 2980072850720726541
+    second: books2_68
+  - first:
+      213: 1783642064117965603
+    second: books2_69
+  - first:
+      213: -944007841876482485
+    second: books2_70
+  - first:
+      213: 493487701002748
+    second: books2_71
+  - first:
+      213: 5201551339943258827
+    second: books2_72
+  - first:
+      213: 2893375621427860800
+    second: books2_73
+  - first:
+      213: 2171001959445821497
+    second: books2_74
+  - first:
+      213: -407747774993036529
+    second: books2_75
+  - first:
+      213: -2086674863423164967
+    second: books2_76
+  - first:
+      213: 9202156802793654544
+    second: books2_77
+  - first:
+      213: 4030136862683343855
+    second: books2_78
+  - first:
+      213: -4271329858288484578
+    second: books2_79
+  - first:
+      213: -6970649982532706697
+    second: books2_80
+  - first:
+      213: -8776340569524058274
+    second: books2_81
+  - first:
+      213: 100272724326159161
+    second: books2_82
+  - first:
+      213: -1594768124351694134
+    second: books2_83
+  - first:
+      213: -5689263905496800650
+    second: books2_84
+  - first:
+      213: -6850631430928857248
+    second: books2_85
+  - first:
+      213: -1026869506090431397
+    second: books2_86
+  - first:
+      213: -4769549664752670586
+    second: books2_87
+  - first:
+      213: 952559520204825265
+    second: books2_88
+  - first:
+      213: 8516704258470380205
+    second: books2_89
+  - first:
+      213: -8222897455291026310
+    second: books2_90
+  - first:
+      213: -7716885372870350706
+    second: books2_91
+  - first:
+      213: 7881660951179903819
+    second: books2_92
+  - first:
+      213: 6351858049644079772
+    second: books2_93
+  - first:
+      213: 5758886719530984877
+    second: books2_94
+  - first:
+      213: -6751525435670517937
+    second: books2_95
+  - first:
+      213: 3265125950643530566
+    second: books2_96
+  - first:
+      213: 8673310133139046195
+    second: books2_97
+  - first:
+      213: -4298183017974869834
+    second: books2_98
+  - first:
+      213: 2174192984167634530
+    second: books2_99
+  - first:
+      213: -5019375032637620659
+    second: books2_100
+  - first:
+      213: 3595384652878250588
+    second: books2_101
+  - first:
+      213: -1395334483800038466
+    second: books2_102
+  - first:
+      213: 4967869481896070114
+    second: books2_103
+  - first:
+      213: 1366909606231005786
+    second: books2_104
+  - first:
+      213: 2841753477046685216
+    second: books2_105
+  - first:
+      213: 4631529886892536132
+    second: books2_106
+  - first:
+      213: -8438115784448102761
+    second: books2_107
+  - first:
+      213: 4839573084432189681
+    second: books2_108
+  - first:
+      213: -8092413717317227929
+    second: books2_109
+  - first:
+      213: -4598006729863539009
+    second: books2_110
+  - first:
+      213: -5604107553002692664
+    second: books2_111
+  - first:
+      213: 3405760299950271387
+    second: books2_112
+  - first:
+      213: -7259697115504144252
+    second: books2_113
+  - first:
+      213: 7349514719658873765
+    second: books2_114
+  - first:
+      213: 7808649581279035859
+    second: books2_115
+  - first:
+      213: 5608757506705243683
+    second: books2_116
+  - first:
+      213: -9148802691619229355
+    second: books2_117
+  - first:
+      213: 8727126368855421329
+    second: books2_118
+  - first:
+      213: -4718262550152187029
+    second: books2_119
+  - first:
+      213: -2544469607985993552
+    second: books2_120
+  - first:
+      213: -1654387609271795192
+    second: books2_121
+  - first:
+      213: -9065325041814442228
+    second: books2_122
+  - first:
+      213: -110329103033987253
+    second: books2_123
+  - first:
+      213: -224465912395408221
+    second: books2_124
+  - first:
+      213: 6921885708748590228
+    second: books2_125
+  - first:
+      213: 1163077064114981864
+    second: books2_126
+  - first:
+      213: 4903440111117701926
+    second: books2_127
+  - first:
+      213: 4428571829636582137
+    second: books2_128
+  - first:
+      213: -46583774157326816
+    second: books2_129
+  - first:
+      213: -9011050778368591948
+    second: books2_130
+  - first:
+      213: -2769912652512654117
+    second: books2_131
+  - first:
+      213: 3221032065979973346
+    second: books2_132
+  - first:
+      213: -7018830968424795394
+    second: books2_133
+  - first:
+      213: -5449429396408241329
+    second: books2_134
+  - first:
+      213: -5196918679045237936
+    second: books2_135
+  - first:
+      213: 1189029053380269832
+    second: books2_136
+  - first:
+      213: 7993384233312536690
+    second: books2_137
+  - first:
+      213: 3163111135485256528
+    second: books2_138
+  - first:
+      213: -1145204919566250117
+    second: books2_139
+  - first:
+      213: -5242554141550491581
+    second: books2_140
+  - first:
+      213: -4758027291092011313
+    second: books2_141
+  - first:
+      213: -1937553795404256824
+    second: books2_142
+  - first:
+      213: 2323838912238738312
+    second: books2_143
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: books2_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c9fb0b1ac274d80800000000000000
+      internalID: -8266589518048551888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5cd0250dfe05d70800000000000000
+      internalID: 9029980930886714859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e74c2c036c586b0800000000000000
+      internalID: -5294607874175762884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b03a9bef6afc7d0800000000000000
+      internalID: -2895912422409565373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a9b827232f6b5d0800000000000000
+      internalID: -3046981799385523619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_5
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7209d55caa713a950800000000000000
+      internalID: 6459032312802545703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1db8bd6b3a0f960800000000000000
+      internalID: 7633781374155739557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817ea5ed22782c170800000000000000
+      internalID: 8197262855596861208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_8
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652ccb3f7e39094f0800000000000000
+      internalID: -823996107372838314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_9
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 2004
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e301f310612b4f7f0800000000000000
+      internalID: -579642644444016578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_10
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4add1122ad40820d0800000000000000
+      internalID: -3447500179831136860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_11
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 2014
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b987d745ed08eff50800000000000000
+      internalID: 6917107770076264603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd22b51c0a61fb20800000000000000
+      internalID: 3166428613154319816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_13
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1834
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8ac7463edac29a0800000000000000
+      internalID: -6256434590169388860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b50d645ec448990800000000000000
+      internalID: -7384692941361489138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_15
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1834
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eb6aad9f27da730800000000000000
+      internalID: 4011989260497763977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_16
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4417d8b5384a980800000000000000
+      internalID: -8528547365094603571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_17
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e2eaf63bb060e60800000000000000
+      internalID: 7928037059333074449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_18
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c18863b1a2be3400800000000000000
+      internalID: 305878232277221828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_19
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe8c6fa0b4e6d2c0800000000000000
+      internalID: -4407083737826947329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_20
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1834
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23739a48ed521fb0800000000000000
+      internalID: -4678573810619550931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_21
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535c878248c8f66d0800000000000000
+      internalID: -2995020727935515339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_22
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1834
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87ac94262bd92dd0800000000000000
+      internalID: -2510234360412854386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_23
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1824
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad1768d5f582b9b0800000000000000
+      internalID: -5065839339894268512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aa8cb2b433894d0800000000000000
+      internalID: -3127693543258674564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_25
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1644
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09db7261bc426040800000000000000
+      internalID: 4639354890890238220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_26
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6226df76fee407c0800000000000000
+      internalID: -4105894217780944275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_27
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd7ee22d7abf8ec0800000000000000
+      internalID: -3562423733607039532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1644
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347ebd73f902f1f70800000000000000
+      internalID: 9160076035303925571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_29
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59312fe8326ce470800000000000000
+      internalID: 8425216999572978015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_30
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5970ea0330a09480800000000000000
+      internalID: -8894433122970470053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_31
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1644
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1333afff526ff80800000000000000
+      internalID: -8073223500670488147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_32
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c282dfe1302f860800000000000000
+      internalID: 7562110155939654751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_33
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1654
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab22393895821bce0800000000000000
+      internalID: -1391286444956114246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_34
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1644
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01e2329cd194e0b0800000000000000
+      internalID: -5700270851812564721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_35
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1644
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34c39df5373ef680800000000000000
+      internalID: -8719471123515587521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170257bff061e2d30800000000000000
+      internalID: 4408485343141372017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119d6d25b43d2f340800000000000000
+      internalID: 4896208065370970385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_38
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c03eafc46f8ff420800000000000000
+      internalID: 2666007167570424000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_39
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29896171ecacddb0800000000000000
+      internalID: -4765744221394466513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_40
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f1c09a52945a180800000000000000
+      internalID: -9104790645560828107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_41
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f447ed85e801c810800000000000000
+      internalID: 1783716709436703989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_42
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1474
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a23e7bd3bb4d360800000000000000
+      internalID: 7193580378570041918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_43
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1474
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f67bcc7cf9b78d0800000000000000
+      internalID: -2847506658899824744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_44
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301684067fe744000800000000000000
+      internalID: 19279899353702659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_45
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1474
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aa8882d51442480800000000000000
+      internalID: -8924936693173671398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_46
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1464
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b3e72339c7e8ed0800000000000000
+      internalID: -2409851778947466431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_47
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1474
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cf8b9ab66f67180800000000000000
+      internalID: -9117829453295584105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_48
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2403d3a32a9fa7ff0800000000000000
+      internalID: -37443171722121150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_49
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1284
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11cef855ec6b1680800000000000000
+      internalID: -8783306915959619299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_50
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7b62e316b222730800000000000000
+      internalID: 3972785517948745669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_51
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1284
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7ec9f2e3295fc50800000000000000
+      internalID: 6698420816567920577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_52
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1de0030f678f890800000000000000
+      internalID: -7424053211749756432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_53
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1284
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24c7e117f59ee6d0800000000000000
+      internalID: -2959263016745974742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_54
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7588ee2f745fb1ba0800000000000000
+      internalID: -6117025979485484969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_55
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b799cc48f66d330f0800000000000000
+      internalID: -1138330506336888453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_56
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45b18a4f51a5cb90800000000000000
+      internalID: -7222188996774742709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_57
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde7a4ae72be8b130800000000000000
+      internalID: 3582872060240232159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_58
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1294
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220bb76d267109fd0800000000000000
+      internalID: -2337342493332623326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_59
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1284
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debfc44448f3cbaa0800000000000000
+      internalID: -6143965954326070291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_60
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030a587f9d134ebd0800000000000000
+      internalID: -2601899872482910160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_61
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821a531908ba5d3c0800000000000000
+      internalID: -4335370497593859800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_62
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35662836908da16d0800000000000000
+      internalID: -3018863065362700717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_63
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d355e97dc5d4b6d0800000000000000
+      internalID: -2975518375294970920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_64
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1114
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173b837971620f3a0800000000000000
+      internalID: -6633760368353561743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_65
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a647c3f3acc721a0800000000000000
+      internalID: -6834268904969779549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_66
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e43b2930ac658c0800000000000000
+      internalID: -4010796301431910806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_67
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1114
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bbb1718c3ee8bc0800000000000000
+      internalID: -3778832588796609700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_68
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1114
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e9ef7f7785b5920800000000000000
+      internalID: 2980072850720726541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_69
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3232236d105c0c810800000000000000
+      internalID: 1783642064117965603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_70
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1114
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46e4cf8ed536e2f0800000000000000
+      internalID: -944007841876482485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_71
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1104
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf98e1f03d0c10000800000000000000
+      internalID: 493487701002748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_72
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca664a726f9f2840800000000000000
+      internalID: 5201551339943258827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_73
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0459bf44cc5572820800000000000000
+      internalID: 2893375621427860800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_74
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938f17797c2f02e10800000000000000
+      internalID: 2171001959445821497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_75
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 924
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b85991f83675af0800000000000000
+      internalID: -407747774993036529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_76
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 924
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddece37444aa03e0800000000000000
+      internalID: -2086674863423164967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_77
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019c5f56bd0a4bf70800000000000000
+      internalID: 9202156802793654544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_78
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 924
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feba270cf1cede730800000000000000
+      internalID: 4030136862683343855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_79
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 924
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ff136df1039b4c0800000000000000
+      internalID: -4271329858288484578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_80
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e1e81e5c6434f90800000000000000
+      internalID: -6970649982532706697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_81
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e574ba540cc243680800000000000000
+      internalID: -8776340569524058274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_82
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 924
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9331f12f28d346100800000000000000
+      internalID: 100272724326159161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_83
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 934
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acab6e027de3ed9e0800000000000000
+      internalID: -1594768124351694134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_84
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6726967fe9cab01b0800000000000000
+      internalID: -5689263905496800650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_85
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0670c50820bade0a0800000000000000
+      internalID: -6850631430928857248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_86
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c8cc2ff93dfb1f0800000000000000
+      internalID: -1026869506090431397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_87
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68865dd99d72fcdb0800000000000000
+      internalID: -4769549664752670586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_88
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2a93536db283d00800000000000000
+      internalID: 952559520204825265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_89
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da20f2f4669613670800000000000000
+      internalID: 8516704258470380205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_90
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a743ae8c45662ed80800000000000000
+      internalID: -8222897455291026310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_91
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 744
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a7a1a3ad18e490800000000000000
+      internalID: -7716885372870350706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_92
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43452350e8416d60800000000000000
+      internalID: 7881660951179903819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_93
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 744
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9aadb81e35562850800000000000000
+      internalID: 6351858049644079772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_94
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 754
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5eb53a5fcabef40800000000000000
+      internalID: 5758886719530984877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_95
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 744
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4728da2363cd42a0800000000000000
+      internalID: -6751525435670517937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_96
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b6403b0ce005d20800000000000000
+      internalID: 3265125950643530566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_97
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f7c88ec99cd5870800000000000000
+      internalID: 8673310133139046195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_98
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 564
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0ddf16159c954c0800000000000000
+      internalID: -4298183017974869834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_99
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266557eeff84c2e10800000000000000
+      internalID: 2174192984167634530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_100
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e7b296009975ab0800000000000000
+      internalID: -5019375032637620659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_101
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5203b9ea4f55e130800000000000000
+      internalID: 3595384652878250588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_102
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3ee360ea6c2ace0800000000000000
+      internalID: -1395334483800038466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_103
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 564
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb4bee09fa61f440800000000000000
+      internalID: 4967869481896070114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_104
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ad77f6b0d38f210800000000000000
+      internalID: 1366909606231005786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_105
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e499a2bbfef6720800000000000000
+      internalID: 2841753477046685216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_106
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 574
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b5daa4ef764040800000000000000
+      internalID: 4631529886892536132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_107
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 564
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eaa5ea66ac5ea80800000000000000
+      internalID: -8438115784448102761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_108
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f84f12441e992340800000000000000
+      internalID: 4839573084432189681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_109
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 384
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aeecb7998f1bf80800000000000000
+      internalID: -8092413717317227929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_110
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6d0af8d399030c0800000000000000
+      internalID: -4598006729863539009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_111
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 384
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfd0345fd53a32b0800000000000000
+      internalID: -5604107553002692664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_112
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9be9a4c2f0b34f20800000000000000
+      internalID: 3405760299950271387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_113
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480927ddfef504b90800000000000000
+      internalID: -7259697115504144252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_114
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a395c8b2b8bef560800000000000000
+      internalID: 7349514719658873765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_115
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 384
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1c3a31c65ed5c60800000000000000
+      internalID: 7808649581279035859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_116
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 384
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eb8726c3f46dd40800000000000000
+      internalID: 5608757506705243683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_117
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551f5e5ac6ce80180800000000000000
+      internalID: -9148802691619229355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_118
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1917295b13bfc1970800000000000000
+      internalID: 8727126368855421329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_119
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 394
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b637625853d558eb0800000000000000
+      internalID: -4718262550152187029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_120
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8a73a6f5a30bcd0800000000000000
+      internalID: -2544469607985993552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_121
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8020c841c3f6a09e0800000000000000
+      internalID: -1654387609271795192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_122
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f623597ee713280800000000000000
+      internalID: -9065325041814442228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_123
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f854de348087ef0800000000000000
+      internalID: -110329103033987253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_124
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acdc73217982ecf0800000000000000
+      internalID: -224465912395408221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_125
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 204
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c00ddd06a7f0060800000000000000
+      internalID: 6921885708748590228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_126
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb4af47d64142010800000000000000
+      internalID: 1163077064114981864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_127
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62392903dc48c0440800000000000000
+      internalID: 4903440111117701926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_128
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa4acf8d92757d30800000000000000
+      internalID: 4428571829636582137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_129
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0263e01ed408a5ff0800000000000000
+      internalID: -46583774157326816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_130
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b735564f0152f280800000000000000
+      internalID: -9011050778368591948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_131
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 214
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8f104e1b4f89d0800000000000000
+      internalID: -2769912652512654117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_132
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 34
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eef0e6299763bc20800000000000000
+      internalID: 3221032065979973346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_133
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 34
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2778ceb6a189e90800000000000000
+      internalID: -7018830968424795394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_134
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43f38616dcbf54b0800000000000000
+      internalID: -5449429396408241329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_135
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0539ae0fef5d0e7b0800000000000000
+      internalID: -5196918679045237936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_136
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8079952df97408010800000000000000
+      internalID: 1189029053380269832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_137
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2784dc30c943eee60800000000000000
+      internalID: 7993384233312536690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_138
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0536eaf91d0a5eb20800000000000000
+      internalID: 3163111135485256528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_139
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f4936713a6b10f0800000000000000
+      internalID: -1145204919566250117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_140
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3484125d8c4be37b0800000000000000
+      internalID: -5242554141550491581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_141
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 34
+        width: 82
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6b8da436718fdb0800000000000000
+      internalID: -4758027291092011313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_142
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c928b3b61d6c15e0800000000000000
+      internalID: -1937553795404256824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: books2_143
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 24
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b583fad2fef3020800000000000000
+      internalID: 2323838912238738312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

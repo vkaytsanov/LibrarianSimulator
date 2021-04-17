@@ -8,47 +8,41 @@ namespace Dialog
 {
     public class DialogManager : MonoBehaviour
     {
-        [SerializeField] 
-        private GameObject dialogBox;
-        [SerializeField] 
-        private TextMeshProUGUI dialogText;
+        [SerializeField] private GameObject dialogBox;
+        [SerializeField] private TextMeshProUGUI dialogText;
 
-        private bool isDialoging = false;
+        private bool _isDialoging;
 
-        private const float DIALOG_CHANGE_TIME = 4.0f;
-        private float currentTime = DIALOG_CHANGE_TIME;
+        private const float DialogChangeTime = 4.0f;
+        private float _currentTime = DialogChangeTime;
 
 
-        private Queue<string> sentences = new Queue<string>();
-        private static DialogManager _instance;
+        private readonly Queue<string> _sentences = new Queue<string>();
 
-        public static DialogManager Instance
-        {
-            get => _instance;
-        }
+        public static DialogManager Instance { get; private set; }
 
         // Start is called before the first frame update
         void Awake()
         {
-            if (_instance != null && _instance != this)
+            if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);
             }
             else
             {
-                _instance = this;
+                Instance = this;
             }
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (isDialoging)
+            if (_isDialoging)
             {
-                currentTime += Time.deltaTime;
-                if (currentTime > DIALOG_CHANGE_TIME)
+                _currentTime += Time.deltaTime;
+                if (_currentTime > DialogChangeTime)
                 {
-                    currentTime = 0.0f;
+                    _currentTime = 0.0f;
                     DisplayNextSentence();
                 }
             }
@@ -56,27 +50,29 @@ namespace Dialog
 
         public void StartDialog(Dialog dialog)
         {
-            sentences.Clear();
+            _sentences.Clear();
 
             foreach (var dialogSentence in dialog.sentences)
             {
-                sentences.Enqueue(dialogSentence);
+                _sentences.Enqueue(dialogSentence);
             }
-            
+
             dialogBox.SetActive(true);
-            isDialoging = true;
+            _isDialoging = true;
         }
 
         private void DisplayNextSentence()
         {
-            if (sentences.Count == 0)
+            if (_sentences.Count == 0)
             {
                 dialogBox.SetActive(false);
-                isDialoging = false;
+                dialogText.text = "";
+                _isDialoging = false;
+                _currentTime = DialogChangeTime;
             }
             else
             {
-                dialogText.text = sentences.Dequeue();
+                dialogText.text = _sentences.Dequeue();
             }
         }
     }

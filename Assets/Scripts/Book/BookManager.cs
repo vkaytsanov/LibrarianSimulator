@@ -14,17 +14,18 @@ namespace Book
         public Button button;
         [SerializeField] private Sprite[] sprites;
         [SerializeField] private GameObject bookPrefab;
+        [SerializeField] private GameObject bookSeal;
 
 
-        private SpriteRenderer bookSpriteRenderer;
+        private SpriteRenderer _bookSpriteRenderer;
 
-        private Vector3 spawnVector;
+        private Vector3 _spawnVector;
 
         // Start is called before the first frame update
         void Start()
         {
-            bookSpriteRenderer = bookPrefab.GetComponent<SpriteRenderer>();
-            spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(0.65f, 1.2f, 0.5f));
+            _bookSpriteRenderer = bookPrefab.GetComponent<SpriteRenderer>();
+            _spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(0.65f, 1.2f, 0.5f));
 
             button.onClick.AddListener(() => { Spawn(); });
             Spawn();
@@ -32,8 +33,9 @@ namespace Book
 
         void Spawn()
         {
-            bookSpriteRenderer.sprite = GenerateRandomSprite();
-            Instantiate(bookPrefab, spawnVector, Quaternion.identity);
+            _bookSpriteRenderer.sprite = GenerateRandomSprite();
+            bookSeal.SetActive(false);
+            Instantiate(bookPrefab, _spawnVector, Quaternion.identity);
         }
 
 

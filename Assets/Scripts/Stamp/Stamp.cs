@@ -1,4 +1,5 @@
 ﻿using System;
+using Common;
 using UnityEngine;
 
 
@@ -6,7 +7,7 @@ namespace Stamp
 {
     public class Stamp : DraggableObject
     {
-        private bool isStamping;
+        [SerializeField] private bool _isStamping;
         
         protected override void Start()
         {
@@ -17,28 +18,29 @@ namespace Stamp
         protected override void OnMouseDrag()
         {
             base.OnMouseDrag();
-            isStamping = Input.GetAxis("Mouse Y") < -0.2f;
-            _boxCollider.isTrigger = true;
+            _isStamping = Input.GetAxis("Mouse Y") < -0.2f;
             //Debug.Log(Input.GetAxis("Mouse Y"));
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             Book.Book book = other.gameObject.GetComponent<Book.Book>();
-            if (book && isStamping)
+            if (book && _isStamping)
             {
-                _boxCollider.isTrigger = false;
-                isStamping = false;
+                _isStamping = false;
                 
                 book.OnStamped(transform.position);
-                OnMouseExit();
             }
         }
-        
-        
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            Debug.Log("Test " + other.gameObject.name);
+        }
 
         private void OnTriggerStay2D(Collider2D other)
         {
+            Debug.Log(other.name + " triggers stay " + name);
             if (currentState == ObjectState.Falling && other.name.Equals("Table"))
             {
                 currentState = ObjectState.Idle;

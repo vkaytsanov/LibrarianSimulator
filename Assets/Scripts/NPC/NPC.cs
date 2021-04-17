@@ -1,23 +1,22 @@
 ﻿using System;
 using Dialog;
+using IdentificationCard;
 using UnityEngine;
 
 namespace NPC
 {
+    [RequireComponent(typeof(Animator))]
     public class NPC : MonoBehaviour
     {
         private Animator _animator;
-        [SerializeField]
-        private GameObject identificationCard;
 
-        private bool isMoving = true;
-        private const float MOVING_SPEED = 5.0f;
-        private NPCIdCard _idCard = new NPCIdCard();
-        private NPCAction action = NPCAction.WantingBook;
-        private string actionInfo = "Three Comrades by Erich Maria Remarque";
-        private Sprite sprite;
+        private bool _isMoving = true;
+        private const float MovingSpeed = 5.0f;
+        public NPCAction action = NPCAction.WantingBook;
+        public string actionInfo = "Three Comrades by Erich Maria Remarque";
 
-        private bool leaving = false;
+
+        private bool _isLeaving;
 
         void Start()
         {
@@ -26,10 +25,10 @@ namespace NPC
 
         void Update()
         {
-            if (isMoving)
+            if (_isMoving)
             {
-                float dx = MOVING_SPEED * Time.deltaTime;
-                if (leaving) dx *= -1;
+                float dx = MovingSpeed * Time.deltaTime;
+                if (_isLeaving) dx *= -1;
                 transform.Translate(Vector3.right * dx);
                 _animator.SetBool("moving", true);
             }
@@ -41,7 +40,7 @@ namespace NPC
             if (other.name == "NPC_Border")
             {
                 _animator.SetBool("moving", false);
-                isMoving = false;
+                _isMoving = false;
                 UseAction();
             }
         }
@@ -55,21 +54,20 @@ namespace NPC
                     }
                 )
             );
-
-            Instantiate(identificationCard, transform.position, Quaternion.identity);
-
+            
+            IDManager.Instance.Spawn(transform.position);
         }
 
         public void SetToLeaving()
         {
-            isMoving = true;
-            leaving = true;
+            _isMoving = true;
+            _isLeaving = true;
         }
 
         public void SetToComing()
         {
-            isMoving = true;
-            leaving = false;
+            _isMoving = true;
+            _isLeaving = false;
         }
     }
 }
