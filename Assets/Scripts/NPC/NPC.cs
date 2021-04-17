@@ -13,7 +13,7 @@ namespace NPC
         private bool _isMoving = true;
         private const float MovingSpeed = 5.0f;
         public NPCAction action = NPCAction.WantingBook;
-        public string actionInfo = "Three Comrades by Erich Maria Remarque";
+        public string actionInfo;
 
 
         private bool _isLeaving;

@@ -9,7 +9,15 @@ namespace Book
     {
         [SerializeField]
         private GameObject seal;
+
+        private AudioSource _audioSource;
         private bool _isStamped;
+
+        protected override void Start()
+        {
+            base.Start();
+            _audioSource = GetComponent<AudioSource>();
+        }
 
         private void OnTriggerStay2D(Collider2D other)
         {
@@ -21,6 +29,7 @@ namespace Book
                     currentState = ObjectState.Idle;
                     _rigidbody.velocity = Vector2.zero;
                     _rigidbody.Sleep();
+                    _audioSource.Play();
                 }
             }
             else if ((currentState == ObjectState.Falling && other.name.Equals("Table")) || other.name.Equals("Stamp"))
@@ -38,7 +47,6 @@ namespace Book
                     {
                         Destroy(gameObject);
                         npc.SetToLeaving();
-                        Debug.Log("Bye");
                     }
                 }
             }

@@ -38,7 +38,7 @@ namespace Book
         public static bool SearchForBook(string query)
         {
             
-            return _fictions.BinarySearch(new BookCharacteristics(query, null)) < 0;
+            return _fictions.BinarySearch(new BookCharacteristics(query, null), BookCharacteristics.TitleComparer) < 0;
         }
     }
 }

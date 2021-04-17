@@ -42,12 +42,22 @@ namespace Book
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((string) obj);
+            return CompareTo((BookCharacteristics) obj) < 0;
         }
 
         public override int GetHashCode()
         {
             return (title != null ? title.GetHashCode() : 0);
         }
+
+        private sealed class TitleEqualityComparer : IComparer<BookCharacteristics>
+        {
+            public int Compare(BookCharacteristics x, BookCharacteristics y)
+            {
+                return String.Compare(x.title, y.title, StringComparison.OrdinalIgnoreCase);
+            }
+        }
+
+        public static IComparer<BookCharacteristics> TitleComparer { get; } = new TitleEqualityComparer();
     }
 }

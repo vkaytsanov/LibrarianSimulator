@@ -8,11 +8,13 @@ namespace Stamp
     public class Stamp : DraggableObject
     {
         [SerializeField] private bool _isStamping;
+        private AudioSource _audioSource;
         
         protected override void Start()
         {
             base.Start();
             currentState = ObjectState.Idle;
+            _audioSource = GetComponent<AudioSource>();
         }
 
         protected override void OnMouseDrag()
@@ -28,14 +30,10 @@ namespace Stamp
             if (book && _isStamping)
             {
                 _isStamping = false;
+                _audioSource.Play();
                 
                 book.OnStamped(transform.position);
             }
-        }
-
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            Debug.Log("Test " + other.gameObject.name);
         }
 
         private void OnTriggerStay2D(Collider2D other)
