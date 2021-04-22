@@ -6,24 +6,7 @@ namespace IdentificationCard
     public class IDCard : DraggableObject
     {
         [SerializeField] private bool isOnRightSide;
-
-
-        protected override void OnMouseDown()
-        {
-            base.OnMouseDown();
-            if (isOnRightSide)
-            {
-                ScaleUp();
-            }
-        }
-
-        protected override void OnMouseUp()
-        {
-            base.OnMouseUp();
-            ScaleDown();
-        }
-
-
+        
         private void OnTriggerStay2D(Collider2D other)
         {
             if (currentState == ObjectState.InitialFalling && other.name.Equals("Table"))

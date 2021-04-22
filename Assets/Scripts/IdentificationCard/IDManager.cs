@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,28 +9,26 @@ namespace IdentificationCard
     {
         [SerializeField] private Sprite[] sprites;
         [SerializeField] private GameObject idPrefab;
-        
-        private SpriteRenderer _idSpriteRenderer;
-        
-        private static IDManager _instance;
+        [SerializeField] private TextMeshProUGUI npcName;
+        [SerializeField] private TextMeshProUGUI npcNumber;
 
-        public static IDManager Instance
-        {
-            get => _instance;
-        }
-        
+        private SpriteRenderer _idSpriteRenderer;
+
+
+        public static IDManager Instance { get; private set; }
+
         void Awake()
         {
-            if (_instance != null && _instance != this)
+            if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);
             }
             else
             {
-                _instance = this;
+                Instance = this;
             }
         }
-        
+
         private void Start()
         {
             _idSpriteRenderer = idPrefab.GetComponent<SpriteRenderer>();
@@ -42,11 +41,10 @@ namespace IdentificationCard
             idPrefab.transform.position = spawnVector;
             idPrefab.GetComponent<IDCard>().currentState = ObjectState.InitialFalling;
         }
-        
+
         private Sprite GenerateRandomSprite()
         {
             return sprites[Random.Range(0, sprites.Length)];
         }
-        
     }
 }

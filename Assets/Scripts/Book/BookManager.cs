@@ -1,13 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using MiscUtil.Collections.Extensions;
 using NPC;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.U2D;
-using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace Book
 {
@@ -22,19 +17,33 @@ namespace Book
 
         private Vector3 _spawnVector;
 
+        public static BookManager Instance { get; private set; }
+
+        void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Instance = this;
+            }
+        }
         // Start is called before the first frame update
         void Start()
         {
             _bookSpriteRenderer = bookPrefab.GetComponent<SpriteRenderer>();
             _spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(0.65f, 1.2f, 0.5f));
-            
         }
         
         public void OnSearchButtonClick(TMP_InputField field)
         {
+            if (field.text == "") return;
+            
             if (NPCManager.Instance.DoTitleMatch(field.text))
             {
-                Spawn();
+                Spawn(_spawnVector);
                 Debug.Log("Book found.");
                 field.image.color = Color.green;
             }
@@ -42,7 +51,6 @@ namespace Book
             {
                 Debug.Log("Book not found.");
                 field.image.color = Color.red;
-                
             }
 
             StartCoroutine(WaitAndResetFieldColor(field, 1.0f));
@@ -56,12 +64,12 @@ namespace Book
                 field.image.color = Color.white;
             }
         }
-        void Spawn()
+        public void Spawn(Vector3 location)
         {
             
             _bookSpriteRenderer.sprite = GenerateRandomSprite();
             bookSeal.SetActive(false);
-            Instantiate(bookPrefab, _spawnVector, Quaternion.identity);
+            Instantiate(bookPrefab, location, Quaternion.identity);
         }
 
 

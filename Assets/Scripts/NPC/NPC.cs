@@ -1,4 +1,5 @@
 ﻿using System;
+using Book;
 using Dialog;
 using IdentificationCard;
 using UnityEngine;
@@ -54,8 +55,8 @@ namespace NPC
                     }
                 )
             );
-            
-            IDManager.Instance.Spawn(transform.position);
+            if(action == NPCAction.WantingBook) IDManager.Instance.Spawn(transform.position);
+            else if(action == NPCAction.ReturningBook) BookManager.Instance.Spawn(transform.position);
         }
 
         public void SetToLeaving()
