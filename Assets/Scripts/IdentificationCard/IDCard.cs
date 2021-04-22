@@ -6,7 +6,7 @@ namespace IdentificationCard
     public class IDCard : DraggableObject
     {
         [SerializeField] private bool isOnRightSide;
-        
+        public IDCharacteristics IDCharacteristics = new IDCharacteristics();
         private void OnTriggerStay2D(Collider2D other)
         {
             if (currentState == ObjectState.InitialFalling && other.name.Equals("Table"))

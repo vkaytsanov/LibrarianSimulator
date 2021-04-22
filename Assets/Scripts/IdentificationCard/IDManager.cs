@@ -10,9 +10,11 @@ namespace IdentificationCard
         [SerializeField] private Sprite[] sprites;
         [SerializeField] private GameObject idPrefab;
         [SerializeField] private TextMeshProUGUI npcName;
+        [SerializeField] private TextMeshProUGUI npcUniversity;
         [SerializeField] private TextMeshProUGUI npcNumber;
-
-        private SpriteRenderer _idSpriteRenderer;
+        [SerializeField] private SpriteRenderer npcPhoto;
+        
+        private IDCard _idCardComponent;
 
 
         public static IDManager Instance { get; private set; }
@@ -31,16 +33,28 @@ namespace IdentificationCard
 
         private void Start()
         {
-            _idSpriteRenderer = idPrefab.GetComponent<SpriteRenderer>();
+            _idCardComponent = idPrefab.GetComponent<IDCard>();
         }
 
-        public void Spawn(Vector3 spawnVector)
+        public void Spawn(Vector3 spawnVector, Sprite photo)
         {
-            _idSpriteRenderer.sprite = GenerateRandomSprite();
             idPrefab.SetActive(true);
             idPrefab.transform.position = spawnVector;
-            idPrefab.GetComponent<IDCard>().currentState = ObjectState.InitialFalling;
+            _idCardComponent.currentState = ObjectState.InitialFalling;
+            SetupIdentity(photo);
         }
+
+        private void SetupIdentity(Sprite photo) {
+            npcName.text = _idCardComponent.IDCharacteristics.LastName + ",\n" +
+                           _idCardComponent.IDCharacteristics.FirstName;
+
+            npcUniversity.text = _idCardComponent.IDCharacteristics.University;
+
+            npcNumber.text = _idCardComponent.IDCharacteristics.Number;
+
+            npcPhoto.sprite = photo;
+        }
+        
 
         private Sprite GenerateRandomSprite()
         {

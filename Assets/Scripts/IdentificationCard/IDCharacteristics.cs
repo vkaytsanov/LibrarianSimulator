@@ -4,11 +4,10 @@ namespace IdentificationCard
 {
     public class IDCharacteristics
     {
-        public string name = "TestSubject";
-        public string university = "NBU";
-        public int year = 2;
-        public Sprite photo;
-        public Sprite background;
+        public string FirstName = "John";
+        public string LastName = "Smith";
+        public string University = "SU";
+        public string Number = "F91631";
 
         public void GenerateRandomIdCard()
         {

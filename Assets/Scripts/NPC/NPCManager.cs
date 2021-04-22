@@ -2,68 +2,61 @@
 using Book;
 using UnityEngine;
 
-namespace NPC
-{
-    public class NPCManager : MonoBehaviour
-    {
-        [SerializeField] private Sprite[] sprites;
+namespace NPC {
 
-        [SerializeField] private GameObject npcPrefab;
+	public class NPCManager : MonoBehaviour {
+		[SerializeField] private Sprite[] sprites;
 
-        public NPC _npcComponent;
+		[SerializeField] private GameObject npcPrefab;
 
-        private SpriteRenderer _npcSpriteRenderer;
+		private NPC _npcComponent;
 
-        private Vector3 _spawnVector;
+		private SpriteRenderer _npcSpriteRenderer;
+		
 
-        public static NPCManager Instance { get; private set; }
+		public static NPCManager Instance { get; private set; }
 
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-                Destroy(gameObject);
-            else
-                Instance = this;
-        }
+		private void Awake() {
+			if (Instance != null && Instance != this)
+				Destroy(gameObject);
+			else
+				Instance = this;
+		}
 
-        private void Start()
-        {
-            _spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(-0.5f, 0.75f, 0.5f));
-            _npcComponent = npcPrefab.GetComponent<NPC>();
-            Spawn();
-        }
+		private void Start() {
+			_npcComponent = npcPrefab.GetComponent<NPC>();
+			_npcSpriteRenderer = npcPrefab.GetComponent<SpriteRenderer>();
+			Spawn();
+		}
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            Spawn();
-        }
+		private void OnTriggerEnter2D(Collider2D other) {
+			Spawn();
+		}
 
 
-        public void Spawn()
-        {
-            GenerateRandomNPC();
-            GenerateRandomAction();
+		public void Spawn() {
+			GenerateRandomNPCSprite();
+			GenerateRandomAction();
 
-            _npcComponent.SetToComing();
-        }
+			_npcComponent.SetToComing();
+		}
 
-        private void GenerateRandomNPC()
-        {
-        }
+		private void GenerateRandomNPCSprite() {
+			_npcSpriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
+		}
 
-        private void GenerateRandomAction()
-        {
-            // TODO
-            _npcComponent.action = NPCAction.WantingBook;
+		private void GenerateRandomAction() {
+			// TODO
+			_npcComponent.action = NPCAction.WantingBook;
 
-            if (_npcComponent.action == NPCAction.WantingBook)
-                _npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
-        }
+			if (_npcComponent.action == NPCAction.WantingBook)
+				_npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
+		}
 
-        public bool DoTitleMatch(string text)
-        {
-            return string.Compare(_npcComponent.actionInfo, text, CultureInfo.CurrentCulture,
-                CompareOptions.IgnoreCase | CompareOptions.IgnoreSymbols) == 0;
-        }
-    }
+		public bool DoTitleMatch(string text) {
+			return string.Compare(_npcComponent.actionInfo, text, CultureInfo.CurrentCulture,
+				CompareOptions.IgnoreCase | CompareOptions.IgnoreSymbols) == 0;
+		}
+	}
+
 }

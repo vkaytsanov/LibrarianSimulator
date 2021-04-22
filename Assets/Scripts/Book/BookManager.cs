@@ -39,18 +39,14 @@ namespace Book
         
         public void OnSearchButtonClick(TMP_InputField field)
         {
-            if (field.text == "") return;
-            
-            if (NPCManager.Instance.DoTitleMatch(field.text))
-            {
+            if (field.text == "" || !NPCManager.Instance.DoTitleMatch(field.text)) {
+                Debug.Log("Book not found.");
+                field.image.color = Color.red;
+            }
+            else {
                 Spawn(_spawnVector);
                 Debug.Log("Book found.");
                 field.image.color = Color.green;
-            }
-            else
-            {
-                Debug.Log("Book not found.");
-                field.image.color = Color.red;
             }
 
             StartCoroutine(WaitAndResetFieldColor(field, 1.0f));
