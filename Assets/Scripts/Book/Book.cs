@@ -46,7 +46,7 @@ namespace Book
                     if (currentState == ObjectState.Falling && _isStamped)
                     {
                         Destroy(gameObject);
-                        npc.SetToLeaving();
+                        npc.HandleItemCollect();
                     }
                 }
             }

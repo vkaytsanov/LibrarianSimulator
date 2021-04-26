@@ -12,7 +12,9 @@ namespace NPC {
 		private SpriteRenderer _spriteRenderer;
 		private const float MovingSpeed = 5.0f;
 
-		private bool _isMoving = true;
+		public int ItemsToCollect;
+
+		private bool _isMoving = false;
 		public NPCAction action = NPCAction.WantingBook;
 		public string actionInfo;
 
@@ -31,6 +33,8 @@ namespace NPC {
 				if (_isLeaving) dx *= -1;
 				transform.Translate(Vector3.right * dx);
 				_animator.SetBool("moving", true);
+				_animator.SetBool("falling", false);
+				
 			}
 		}
 
@@ -50,8 +54,14 @@ namespace NPC {
 					}
 				)
 			);
-			if (action == NPCAction.WantingBook) IDManager.Instance.Spawn(transform.position, _spriteRenderer.sprite);
-			else if (action == NPCAction.ReturningBook) BookManager.Instance.Spawn(transform.position);
+			if (action == NPCAction.WantingBook) {
+				IDManager.Instance.Spawn(transform.position, _spriteRenderer.sprite);
+				ItemsToCollect++;
+			}
+			else if (action == NPCAction.ReturningBook) {
+				BookManager.Instance.Spawn(transform.position);
+				ItemsToCollect++;
+			}
 		}
 
 		public void SetToLeaving() {
@@ -60,8 +70,22 @@ namespace NPC {
 		}
 
 		public void SetToComing() {
+			Debug.Log("SetToComing NPC");
 			_isMoving = true;
 			_isLeaving = false;
+			transform.position = new Vector3(-13, 2, 0);
+		}
+
+		public bool IsKnockedDown() {
+			_animator.SetBool("falling", true);
+			return transform.position.y < -2;
+		}
+
+		public void HandleItemCollect() {
+			ItemsToCollect--;
+			if (ItemsToCollect == 0) {
+				SetToLeaving();
+			}
 		}
 	}
 

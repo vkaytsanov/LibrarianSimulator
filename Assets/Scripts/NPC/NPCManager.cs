@@ -9,7 +9,7 @@ namespace NPC {
 
 		[SerializeField] private GameObject npcPrefab;
 
-		private NPC _npcComponent;
+		public NPC npcComponent;
 
 		private SpriteRenderer _npcSpriteRenderer;
 		
@@ -24,7 +24,7 @@ namespace NPC {
 		}
 
 		private void Start() {
-			_npcComponent = npcPrefab.GetComponent<NPC>();
+			npcComponent = npcPrefab.GetComponent<NPC>();
 			_npcSpriteRenderer = npcPrefab.GetComponent<SpriteRenderer>();
 			Spawn();
 		}
@@ -38,7 +38,7 @@ namespace NPC {
 			GenerateRandomNPCSprite();
 			GenerateRandomAction();
 
-			_npcComponent.SetToComing();
+			npcComponent.SetToComing();
 		}
 
 		private void GenerateRandomNPCSprite() {
@@ -47,14 +47,14 @@ namespace NPC {
 
 		private void GenerateRandomAction() {
 			// TODO
-			_npcComponent.action = NPCAction.WantingBook;
+			npcComponent.action = NPCAction.WantingBook;
 
-			if (_npcComponent.action == NPCAction.WantingBook)
-				_npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
+			if (npcComponent.action == NPCAction.WantingBook)
+				npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
 		}
 
 		public bool DoTitleMatch(string text) {
-			return string.Compare(_npcComponent.actionInfo, text, CultureInfo.CurrentCulture,
+			return string.Compare(npcComponent.actionInfo, text, CultureInfo.CurrentCulture,
 				CompareOptions.IgnoreCase | CompareOptions.IgnoreSymbols) == 0;
 		}
 	}

@@ -6,6 +6,7 @@ namespace IdentificationCard
     public class IDCard : DraggableObject
     {
         [SerializeField] private bool isOnRightSide;
+        private bool _isChecked = false;
         public IDCharacteristics IDCharacteristics = new IDCharacteristics();
         private void OnTriggerStay2D(Collider2D other)
         {
@@ -22,6 +23,19 @@ namespace IdentificationCard
                 currentState = ObjectState.Idle;
                 _rigidbody.Sleep();
             }
+            else
+            {
+                NPC.NPC npc = other.gameObject.GetComponent<NPC.NPC>();
+                if (npc)
+                {
+                    if (currentState == ObjectState.Falling && _isChecked)
+                    {
+                        gameObject.SetActive(false);
+                        _isChecked = false;
+                        npc.HandleItemCollect();
+                    }
+                }
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -32,6 +46,7 @@ namespace IdentificationCard
                 if (isOnRightSide)
                 {
                     ScaleUp();
+                    _isChecked = true;
                 }
                 else
                 {
