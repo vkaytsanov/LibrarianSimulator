@@ -1,10 +1,10 @@
 ﻿namespace NPC
 {
-    public enum NPCAction
+    public enum NPCAction : sbyte
     {
-        ReturningBook,
-        WantingBook,
-        ReadingBook,
-        Registration,
+        ReturningBook = 0,
+        WantingBook = 1,
+        ReadingBook = 2,
+        Registration = 3,
     }
 }

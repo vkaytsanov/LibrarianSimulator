@@ -34,11 +34,5 @@ namespace Book
         {
             return _fictions[random.Next(_fictions.Count)];
         }
-
-        public static bool SearchForBook(string query)
-        {
-            
-            return _fictions.BinarySearch(new BookCharacteristics(query, null), BookCharacteristics.TitleComparer) < 0;
-        }
     }
 }

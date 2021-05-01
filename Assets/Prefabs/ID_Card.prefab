@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5194143711852867485}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: IDCardText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1233331831273191012}
   - component: {fileID: 8545304201659477446}
   - component: {fileID: 78554867542710316}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6119313403007540602}
   - component: {fileID: 1023302079519763672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IDPhoto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,9 +240,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1622012699
+  m_SortingLayerID: 1766514577
   m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 17997aef887a88c4fa7bb4e5decb2ee0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 983248540316401313}
   - component: {fileID: 4346820293029643235}
   - component: {fileID: 605288546432778978}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: NPC_University
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 3549791994745901963}
   - component: {fileID: 9017402600547590467}
   - component: {fileID: 8082995795056114311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IDPhotoBorderMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,9 +458,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1622012699
+  m_SortingLayerID: 1766514577
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 2170064586438493028}
   - component: {fileID: 8592366031910318739}
   - component: {fileID: 5384941516010427543}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: NPC_Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +669,7 @@ GameObject:
   - component: {fileID: 8476979763983681743}
   - component: {fileID: 1460619709954271394}
   - component: {fileID: 7237552661712250365}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CanvasIDCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2730622788474106646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 983248540316401313}
@@ -697,7 +697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.025329113, y: 0.0039982796}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 8.9633, y: 5.7004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8476979763983681743
@@ -718,8 +718,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 1622012699
-  m_SortingOrder: 2
+  m_SortingLayerID: 1766514577
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1460619709954271394
 MonoBehaviour:
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 3985645872613178671}
   - component: {fileID: 4905506268593766929}
   - component: {fileID: 4549760083584801086}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Question Number Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 4902435982919438806}
   - component: {fileID: 5598871629011914875}
   - component: {fileID: 2149233681568379368}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: NPC_Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 471583321932303498}
   - component: {fileID: 7370625536420574620}
   - component: {fileID: 1956801852378192216}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 510276188743904101}
   - component: {fileID: 7103388366966273302}
   - component: {fileID: 4320196737356454035}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Question University
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 6798738709153150899}
   - component: {fileID: 4058992602050093426}
   - component: {fileID: 8506346022059359718}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Question Name Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   - component: {fileID: 7634020693638107766}
   - component: {fileID: 490859159048832865}
   - component: {fileID: 1415194062265082848}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1749,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1766514577
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 187a02dc25d971a40bf75b564371f0ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

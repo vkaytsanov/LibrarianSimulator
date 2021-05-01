@@ -47,10 +47,15 @@ namespace NPC {
 
 		private void GenerateRandomAction() {
 			// TODO
-			npcComponent.action = NPCAction.WantingBook;
+			npcComponent.action = (NPCAction) Random.Range(0, 2);
+			// npcComponent.action = NPCAction.ReturningBook;
 
-			if (npcComponent.action == NPCAction.WantingBook)
-				npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().title;
+			if (npcComponent.action == NPCAction.WantingBook) {
+				npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().Title;
+			}
+			else if (npcComponent.action == NPCAction.ReturningBook) {
+				npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().Title;
+			}
 		}
 
 		public bool DoTitleMatch(string text) {

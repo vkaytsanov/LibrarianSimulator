@@ -10,6 +10,7 @@ namespace Book
         [SerializeField]
         private GameObject seal;
 
+        private string _requestTitle;
         private AudioSource _audioSource;
         private bool _isStamped;
 
@@ -45,8 +46,10 @@ namespace Book
                 {
                     if (currentState == ObjectState.Falling && _isStamped)
                     {
-                        Destroy(gameObject);
-                        npc.HandleItemCollect();
+                        if (npc.actionInfo.Equals(_requestTitle)) {
+                            Destroy(gameObject);
+                            npc.HandleItemCollect();
+                        }
                     }
                 }
             }
@@ -63,6 +66,10 @@ namespace Book
                     seal.transform.localScale.x;
                 seal.SetActive(true);
             }
+        }
+
+        public void OnSpawn(string bookCharacteristics) {
+            _requestTitle = bookCharacteristics;
         }
     }
 }

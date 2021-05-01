@@ -7,34 +7,34 @@ namespace Book
 {
     public class BookCharacteristics : IComparable<BookCharacteristics>
     {
-        public string title;
-        public string author;
+        public readonly string Title;
+        public readonly string Author;
 
         public BookCharacteristics(string title, string author)
         {
-            this.title = title;
-            this.author = author;
+            this.Title = title;
+            this.Author = author;
         }
 
         public override string ToString()
         {
-            return "Title: " + title + ", Author: " + author;
+            return "Title: " + Title + ", Author: " + Author;
         }
         
         protected bool Equals(BookCharacteristics other)
         {
-            return title == other.title;
+            return Title == other.Title;
         }
         
         protected bool Equals(string other)
         {
-            return title == other;
+            return Title == other;
         }
 
         public int CompareTo(BookCharacteristics other)
         {
             if (other == null) return 1;
-            return title.CompareTo(other.title);
+            return Title.CompareTo(other.Title);
         }
 
         public override bool Equals(object obj)
@@ -47,14 +47,14 @@ namespace Book
 
         public override int GetHashCode()
         {
-            return (title != null ? title.GetHashCode() : 0);
+            return (Title != null ? Title.GetHashCode() : 0);
         }
 
         private sealed class TitleEqualityComparer : IComparer<BookCharacteristics>
         {
             public int Compare(BookCharacteristics x, BookCharacteristics y)
             {
-                return String.Compare(x.title, y.title, StringComparison.OrdinalIgnoreCase);
+                return String.Compare(x.Title, y.Title, StringComparison.OrdinalIgnoreCase);
             }
         }
 

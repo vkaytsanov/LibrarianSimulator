@@ -7,7 +7,7 @@ namespace IdentificationCard
     {
         [SerializeField] private bool isOnRightSide;
         private bool _isChecked = false;
-        public IDCharacteristics IDCharacteristics = new IDCharacteristics();
+        public readonly IDCharacteristics IDCharacteristics = new IDCharacteristics();
         private void OnTriggerStay2D(Collider2D other)
         {
             if (currentState == ObjectState.InitialFalling && other.name.Equals("Table"))
