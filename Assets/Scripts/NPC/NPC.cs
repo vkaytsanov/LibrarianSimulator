@@ -1,7 +1,7 @@
 ﻿using System;
 using Book;
 using Dialog;
-using IdentificationCard;
+using UniversityCard;
 using UnityEngine;
 
 namespace NPC {
@@ -53,14 +53,20 @@ namespace NPC {
 					}
 				)
 			);
-			if (action == NPCAction.WantingBook) {
-				IDManager.Instance.Spawn(transform.position, _spriteRenderer.sprite);
-				ItemsToCollect += 2;
-			}
-			else if (action == NPCAction.ReturningBook) {
-				IDManager.Instance.Spawn(transform.position, _spriteRenderer.sprite);
-				BookManager.Instance.Spawn(transform.position + Vector3.right, actionInfo);
-				ItemsToCollect++;
+			switch (action) {
+				case NPCAction.WantingBook:
+					UniversityCard.UniversityCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					ItemsToCollect += 2;
+					break;
+				case NPCAction.ReturningBook:
+					UniversityCard.UniversityCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					BookManager.Instance.Spawn(transform.position + Vector3.right, actionInfo);
+					ItemsToCollect++;
+					break;
+				case NPCAction.Registration:
+					IdentificationCard.IdentificationCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					ItemsToCollect += 2;
+					break;
 			}
 		}
 

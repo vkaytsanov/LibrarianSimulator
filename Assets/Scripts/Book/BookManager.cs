@@ -47,7 +47,7 @@ namespace Book {
 			StartCoroutine(WaitAndResetFieldColor(field, 1.0f));
 		}
 
-		private IEnumerator WaitAndResetFieldColor(TMP_InputField field, float waitTime) {
+		public static IEnumerator WaitAndResetFieldColor(TMP_InputField field, float waitTime) {
 			yield return new WaitForSeconds(waitTime);
 			field.image.color = Color.white;
 		}
