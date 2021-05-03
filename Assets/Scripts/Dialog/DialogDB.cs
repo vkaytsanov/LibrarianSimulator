@@ -2,56 +2,53 @@
 using System.Collections.Generic;
 using System.IO;
 using NPC;
+using Random = UnityEngine.Random;
 
-namespace Dialog
-{
-    public static class DialogDB
-    {
-        private static Random random = new Random();
-        private static List<string> _returningBooks = new List<string>();
-        private static List<string> _wantingBooks = new List<string>();
+namespace Dialog {
 
-        static DialogDB()
-        {
-            ParseSentences(_returningBooks, "returning_books");
-            ParseSentences(_wantingBooks, "wanting_books");
-        }
+	public static class DialogDB {
+		private static readonly List<string> ReturningBooks = new List<string>();
+		private static readonly List<string> WantingBooks = new List<string>();
+		private static readonly List<string> Registration = new List<string>();
 
-        private static void ParseSentences(List<string> db, string fileName)
-        {
-            using (StreamReader sr = File.OpenText("Assets/Database/" + fileName + ".txt"))
-            {
-                string sentence;
-                while ((sentence = sr.ReadLine()) != null)
-                {
-                    db.Add(sentence);
-                }
+		static DialogDB() {
+			ParseSentences(ReturningBooks, "returning_books");
+			ParseSentences(WantingBooks, "wanting_books");
+			ParseSentences(Registration, "registration");
+		}
 
-                Console.WriteLine();
-            }
-        }
+		private static void ParseSentences(List<string> db, string fileName) {
+			StreamReader sr = File.OpenText("Assets/Database/" + fileName + ".txt");
+			string sentence;
+			while ((sentence = sr.ReadLine()) != null) {
+				db.Add(sentence);
+			}
 
-        public static string GetRandomSentence(NPCAction action, string actionInfo)
-        {
-            string formattedSentence;
-            switch (action)
-            {
-                case NPCAction.ReturningBook:
-                    formattedSentence = _returningBooks[random.Next(_returningBooks.Count)];
-                    break;
-                case NPCAction.WantingBook:
-                    formattedSentence = _wantingBooks[random.Next(_wantingBooks.Count)];
-                    break;
-                default:
-                    throw new NotImplementedException();
-            }
+			sr.Close();
+		}
 
-            if (formattedSentence.HasPlaceholder())
-            {
-                formattedSentence = String.Format(formattedSentence, actionInfo);
-            }
+		public static string GetRandomSentence(NPCAction action, string actionInfo) {
+			string formattedSentence;
+			switch (action) {
+				case NPCAction.ReturningBook:
+					formattedSentence = ReturningBooks[Random.Range(0, ReturningBooks.Count)];
+					break;
+				case NPCAction.WantingBook:
+					formattedSentence = WantingBooks[Random.Range(0, WantingBooks.Count)];
+					break;
+				case NPCAction.Registration:
+					formattedSentence = Registration[Random.Range(0, Registration.Count)];
+					break;
+				default:
+					throw new NotImplementedException();
+			}
 
-            return formattedSentence;
-        }
-    }
+			if (formattedSentence.HasPlaceholder()) {
+				formattedSentence = String.Format(formattedSentence, actionInfo);
+			}
+
+			return formattedSentence;
+		}
+	}
+
 }

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Common;
+using Dialog;
 
 
 namespace Book

@@ -6,16 +6,18 @@ using UnityEngine;
 
 namespace NPC {
 
-	[RequireComponent(typeof(Animator))]
+	[RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
 	public class NPC : MonoBehaviour {
 		private Animator _animator;
 		private SpriteRenderer _spriteRenderer;
+		[SerializeField] private IdentificationCard.IdentificationCard identificationCard;
+		[SerializeField] private UniversityCard.UniversityCard universityCard;
 		private const float MovingSpeed = 5.0f;
 
 		public int ItemsToCollect;
 
 		private bool _isMoving = false;
-		public NPCAction action = NPCAction.WantingBook;
+		public NPCAction action;
 		public string actionInfo;
 
 
@@ -48,23 +50,26 @@ namespace NPC {
 
 		private void UseAction() {
 			DialogManager.Instance.StartDialog(
-				new Dialog.Dialog(new[] {
+				new Dialog.DialogueSequence(new[] {
 						DialogDB.GetRandomSentence(action, actionInfo)
 					}
 				)
 			);
 			switch (action) {
 				case NPCAction.WantingBook:
-					UniversityCard.UniversityCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					universityCard.Spawn(transform.position,
+						_spriteRenderer.sprite);
 					ItemsToCollect += 2;
 					break;
 				case NPCAction.ReturningBook:
-					UniversityCard.UniversityCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					universityCard.Spawn(transform.position,
+						_spriteRenderer.sprite);
 					BookManager.Instance.Spawn(transform.position + Vector3.right, actionInfo);
-					ItemsToCollect++;
+					ItemsToCollect += 1;
 					break;
 				case NPCAction.Registration:
-					IdentificationCard.IdentificationCard.Instance.SpawnFromCharacter(transform.position, _spriteRenderer.sprite);
+					identificationCard.SpawnFromCharacter(transform.position,
+						_spriteRenderer.sprite);
 					ItemsToCollect += 2;
 					break;
 			}

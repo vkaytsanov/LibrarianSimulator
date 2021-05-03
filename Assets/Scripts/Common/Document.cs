@@ -31,7 +31,12 @@ namespace Common {
 
 		private void OnTriggerExit2D(Collider2D other) {
 			if (currentState == ObjectState.Dragged && other.name.Equals("NPC_Border")) {
-				isOnRightSide = !isOnRightSide;
+				if (transform.position.x > other.transform.position.x) {
+					isOnRightSide = true;
+				}
+				else {
+					isOnRightSide = false;
+				}
 				if (isOnRightSide) {
 					ScaleUp();
 					_isChecked = true;

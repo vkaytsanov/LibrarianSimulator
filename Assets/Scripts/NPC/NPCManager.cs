@@ -6,12 +6,9 @@ namespace NPC {
 
 	public class NPCManager : MonoBehaviour {
 		[SerializeField] private Sprite[] sprites;
-
-		[SerializeField] private GameObject npcPrefab;
-
+		
 		public NPC npcComponent;
-
-		private SpriteRenderer _npcSpriteRenderer;
+		[SerializeField] private SpriteRenderer _npcSpriteRenderer;
 		
 
 		public static NPCManager Instance { get; private set; }
@@ -24,8 +21,6 @@ namespace NPC {
 		}
 
 		private void Start() {
-			npcComponent = npcPrefab.GetComponent<NPC>();
-			_npcSpriteRenderer = npcPrefab.GetComponent<SpriteRenderer>();
 			Spawn();
 		}
 
@@ -47,8 +42,8 @@ namespace NPC {
 
 		private void GenerateRandomAction() {
 			// TODO
-			npcComponent.action = (NPCAction) Random.Range(0, 2);
-			// npcComponent.action = NPCAction.ReturningBook;
+			// npcComponent.action = (NPCAction) Random.Range(0, 2);
+			npcComponent.action = NPCAction.Registration;
 
 			if (npcComponent.action == NPCAction.WantingBook) {
 				npcComponent.actionInfo = BooksDB.GetRandomFictionBookCharacteristics().Title;

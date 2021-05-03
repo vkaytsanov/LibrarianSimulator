@@ -18,8 +18,7 @@ namespace Dialog {
 		private float _currentTime = DialogChangeTime;
 
 
-		private readonly Queue<string> _sentences = new Queue<string>();
-		private readonly Queue<DialogSide> _sides = new Queue<DialogSide>();
+		private readonly Queue<Dialogue> _dialogues = new Queue<Dialogue>();
 
 		public static DialogManager Instance { get; private set; }
 
@@ -44,21 +43,17 @@ namespace Dialog {
 			}
 		}
 
-		public void StartDialog(Dialog dialog) {
-			_sentences.Clear();
-			_sides.Clear();
+		public void StartDialog(DialogueSequence dialogueSequence) {
+			_dialogues.Clear();
 
-			for (int i = 0; i < dialog.Sentences.Length; i++) {
-				_sentences.Enqueue(dialog.Sentences[i]);
-				_sides.Enqueue(dialog.Sides[i]);
+			for (int i = 0; i < dialogueSequence.Dialogues.Length; i++) {
+				_dialogues.Enqueue(dialogueSequence.Dialogues[i]);
 			}
-
-
 			_isDialoging = true;
 		}
 
 		private void DisplayNextSentence() {
-			if (_sentences.Count == 0) {
+			if (_dialogues.Count == 0) {
 				npcDialogBox.SetActive(false);
 				playerDialogBox.SetActive(false);
 				npcDialogText.text = "";
@@ -67,38 +62,58 @@ namespace Dialog {
 				_currentTime = DialogChangeTime;
 			}
 			else {
-				if (_sides.Dequeue() == DialogSide.NpcSide) {
+				Dialogue dialogue = _dialogues.Dequeue();
+				if (dialogue.DialogSide == DialogSide.NpcSide) {
 					npcDialogBox.SetActive(true);
-					npcDialogText.text = _sentences.Dequeue();
+					npcDialogText.text = dialogue.Sentence;
 				}
 				else {
 					playerDialogBox.SetActive(true);
-					playerDialogText.text = _sentences.Dequeue();
+					playerDialogText.text = dialogue.Sentence;
 				}
 			}
 		}
 
+		private void AddNextDialogue(string text, DialogSide side = DialogSide.PlayerSide) {
+			_dialogues.Enqueue(new Dialogue(text, side));
+			_isDialoging = true;
+		}
 
 		public void OnQuestionName(TextMeshProUGUI content) {
-			_sentences.Enqueue("Is your name really " + content.text + "?");
-			_sides.Enqueue(DialogSide.PlayerSide);
-			_isDialoging = true;
-			Debug.Log(content.text);
+			AddNextDialogue("Is your name really " + content.text + "?");
 		}
 
 		public void OnQuestionNumber(TextMeshProUGUI content) {
-			_sentences.Enqueue("Is your number really " + content.text + "?");
-			_sides.Enqueue(DialogSide.PlayerSide);
+			AddNextDialogue("Is your number really " + content.text + "?");
 		}
 
 		public void OnQuestionUniversity(TextMeshProUGUI content) {
-			_sentences.Enqueue("Is your university really " + content.text + "?");
-			_sides.Enqueue(DialogSide.PlayerSide);
+			AddNextDialogue("Is your university really " + content.text + "?");
 		}
 
 		public void OnQuestionPhoto() {
-			_sentences.Enqueue("Is that really you on the photo?");
-			_sides.Enqueue(DialogSide.PlayerSide);
+			AddNextDialogue("Is that really you on the photo?");
+		}
+
+		public void OnQuestionSex(TextMeshProUGUI content) {
+			string fullSex = content.text == "M" ? "male" : "female";
+			AddNextDialogue("Are you a " + fullSex + "?");
+		}
+
+		public void OnQuestionCountry(TextMeshProUGUI content) {
+			AddNextDialogue("Are you really from " + content.text + "?");
+		}
+
+		public void OnQuestionDateOfBirth(TextMeshProUGUI content) {
+			AddNextDialogue("When are you born?");
+		}
+
+		public void OnBookScannedSuccess() {
+			AddNextDialogue("Everything is okay, you are good to go.");
+		}
+
+		public void OnBookScannedFail() {
+			AddNextDialogue("You are late.");
 		}
 	}
 

@@ -16,35 +16,27 @@ namespace IdentificationCard {
 	public class IdentificationCard : Document {
 		public IdentificationCardGUI IdentificationCardGUI = new IdentificationCardGUI();
 
-		private IdentificationCardCharacteristics _identificationCardCharacteristics =
+		public readonly IdentificationCardCharacteristics IdentificationCardCharacteristics =
 			new IdentificationCardCharacteristics();
-
-		public static IdentificationCard Instance { get; private set; }
-
-		private void Awake() {
-			if (Instance != null && Instance != this) {
-				Destroy(gameObject);
-			}
-			else {
-				Instance = this;
-			}
-		}
-
+		
 		public void SpawnFromCharacter(Vector3 spawnVector, Sprite photo) {
 			gameObject.SetActive(true);
 
 			gameObject.transform.position = spawnVector;
 			currentState = ObjectState.InitialFalling;
-			SetupIdentity(photo);
+
+			// TODO
+			IdentificationCardCharacteristics.Photo = photo;
+			SetupGUIIdentity();
 		}
 
-		private void SetupIdentity(Sprite photo) {
-			IdentificationCardGUI.npcCountry.text = _identificationCardCharacteristics.Country;
-			IdentificationCardGUI.npcName.text = _identificationCardCharacteristics.LastName + ",\n" +
-			                                     _identificationCardCharacteristics.FirstName;
-			IdentificationCardGUI.npcSex.text = _identificationCardCharacteristics.Sex;
-			IdentificationCardGUI.npcDateOfBirth.text = _identificationCardCharacteristics.DateOfBirth;
-			IdentificationCardGUI.npcPhoto.sprite = photo;
+		private void SetupGUIIdentity() {
+			IdentificationCardGUI.npcCountry.text = IdentificationCardCharacteristics.Country;
+			IdentificationCardGUI.npcName.text = IdentificationCardCharacteristics.LastName + ",\n" +
+			                                     IdentificationCardCharacteristics.FirstName;
+			IdentificationCardGUI.npcSex.text = IdentificationCardCharacteristics.Sex;
+			IdentificationCardGUI.npcDateOfBirth.text = IdentificationCardCharacteristics.DateOfBirth;
+			IdentificationCardGUI.npcPhoto.sprite = IdentificationCardCharacteristics.Photo;
 		}
 	}
 

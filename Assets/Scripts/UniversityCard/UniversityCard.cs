@@ -15,26 +15,25 @@ namespace UniversityCard {
 		public UniversityCardGUI universityCardGUI = new UniversityCardGUI();
 		private readonly UniversityCardCharacteristics _universityCardCharacteristics= new UniversityCardCharacteristics();
 
-		public static UniversityCard Instance { get; private set; }
+		private Vector3 _spawnVector;
 
-		private void Awake() {
-			if (Instance != null && Instance != this) {
-				Destroy(gameObject);
-			}
-			else {
-				Instance = this;
-			}
+		protected override void Start() {
+			base.Start();
+			_spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(0.65f, 1.2f, 0.5f));
 		}
 
-		public void SpawnFromCharacter(Vector3 spawnVector, Sprite photo) {
+		public void Spawn(Vector3 location, Sprite photo) {
 			gameObject.SetActive(true);
 			
-			gameObject.transform.position = spawnVector;
+			gameObject.transform.position = location;
 			currentState = ObjectState.InitialFalling;
-			SetupIdentity(photo);
+
+			// TODO
+			_universityCardCharacteristics.Photo = photo;
+			SetupGUIIdentity();
 		}
 
-		private void SetupIdentity(Sprite photo) {
+		private void SetupGUIIdentity() {
 			universityCardGUI.npcName.text = _universityCardCharacteristics.LastName + ",\n" +
 			                                 _universityCardCharacteristics.FirstName;
 
@@ -42,7 +41,16 @@ namespace UniversityCard {
 
 			universityCardGUI.npcNumber.text = _universityCardCharacteristics.Number;
 
-			universityCardGUI.npcPhoto.sprite = photo;
+			universityCardGUI.npcPhoto.sprite = _universityCardCharacteristics.Photo;
+		}
+
+		public void OnRegisterNpc(IdentificationCard.IdentificationCard identificationCard) {
+			// TODO
+			_universityCardCharacteristics.FirstName = identificationCard.IdentificationCardCharacteristics.FirstName;
+			_universityCardCharacteristics.LastName = identificationCard.IdentificationCardCharacteristics.LastName;
+			_universityCardCharacteristics.University = "NBU";
+			_universityCardCharacteristics.Number = "F91631";
+			Spawn(_spawnVector, identificationCard.IdentificationCardCharacteristics.Photo);
 		}
 	}
 

@@ -8,10 +8,7 @@ namespace UniversityCard
         public string LastName = "Smith";
         public string University = "NBU";
         public string Number = "F91631";
-
-        public void GenerateRandomIdCard()
-        {
-            
-        }
+        public Sprite Photo = null;
+        
     }
 }

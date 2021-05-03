@@ -63,6 +63,8 @@ namespace Book {
 		Sprite GenerateRandomSprite() {
 			return sprites[Random.Range(0, sprites.Length)];
 		}
+		
+		
 	}
 
 }
