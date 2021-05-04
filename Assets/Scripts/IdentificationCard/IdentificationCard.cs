@@ -1,4 +1,5 @@
 ﻿using Common;
+using NPC;
 using TMPro;
 using UnityEngine;
 
@@ -16,27 +17,29 @@ namespace IdentificationCard {
 	public class IdentificationCard : Document {
 		public IdentificationCardGUI IdentificationCardGUI = new IdentificationCardGUI();
 
-		public readonly IdentificationCardCharacteristics IdentificationCardCharacteristics =
-			new IdentificationCardCharacteristics();
-		
-		public void SpawnFromCharacter(Vector3 spawnVector, Sprite photo) {
+		public IdentificationCardData IdentificationCardData;
+
+		public void SpawnFromCharacter(Vector3 spawnVector, NpcData data) {
+			SetupIdentity(data);
+			SetupGUIIdentity();
+			
 			gameObject.SetActive(true);
 
 			gameObject.transform.position = spawnVector;
 			currentState = ObjectState.InitialFalling;
-
-			// TODO
-			IdentificationCardCharacteristics.Photo = photo;
-			SetupGUIIdentity();
 		}
 
+		private void SetupIdentity(NpcData data) {
+			IdentificationCardData = new IdentificationCardData(data);
+		}
+		
 		private void SetupGUIIdentity() {
-			IdentificationCardGUI.npcCountry.text = IdentificationCardCharacteristics.Country;
-			IdentificationCardGUI.npcName.text = IdentificationCardCharacteristics.LastName + ",\n" +
-			                                     IdentificationCardCharacteristics.FirstName;
-			IdentificationCardGUI.npcSex.text = IdentificationCardCharacteristics.Sex;
-			IdentificationCardGUI.npcDateOfBirth.text = IdentificationCardCharacteristics.DateOfBirth;
-			IdentificationCardGUI.npcPhoto.sprite = IdentificationCardCharacteristics.Photo;
+			IdentificationCardGUI.npcCountry.text = IdentificationCardData.Country;
+			IdentificationCardGUI.npcName.text = IdentificationCardData.LastName + ",\n" +
+			                                     IdentificationCardData.FirstName;
+			IdentificationCardGUI.npcSex.text = IdentificationCardData.Sex.ToString();
+			IdentificationCardGUI.npcDateOfBirth.text = IdentificationCardData.DateOfBirth.ToString();
+			IdentificationCardGUI.npcPhoto.sprite = IdentificationCardData.Photo;
 		}
 	}
 

@@ -43,9 +43,9 @@ namespace Bodyguard {
 				}
 				
 				if (_currentAttackingTime > AttackingTime / 2) {
-					_didKnockDownStudent = NPCManager.Instance.npcComponent.IsKnockedDown();
+					_didKnockDownStudent = NpcManager.Instance.npc.IsKnockedDown();
 					if (_didKnockDownStudent) {
-						NPCManager.Instance.npcComponent.SetToLeaving();
+						NpcManager.Instance.npc.SetToLeaving();
 						SetToLeaving();
 					}
 					

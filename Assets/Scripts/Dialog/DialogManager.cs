@@ -52,6 +52,14 @@ namespace Dialog {
 			_isDialoging = true;
 		}
 
+		public void StartDialog(Dialogue dialogue) {
+			_dialogues.Clear();
+			
+			_dialogues.Enqueue(dialogue);
+
+			_isDialoging = true;
+		}
+
 		private void DisplayNextSentence() {
 			if (_dialogues.Count == 0) {
 				npcDialogBox.SetActive(false);
@@ -114,6 +122,9 @@ namespace Dialog {
 
 		public void OnBookScannedFail() {
 			AddNextDialogue("You are late.");
+			AddNextDialogue("Late with what?", DialogSide.NpcSide);
+			AddNextDialogue("Returning the book, you need to pay 3 Euro");
+			AddNextDialogue("Erhh... I don't have money in me.", DialogSide.NpcSide);
 		}
 	}
 

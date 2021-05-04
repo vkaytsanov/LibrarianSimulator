@@ -1408,9 +1408,8 @@ MonoBehaviour:
         m_MethodName: OnRegisterNpc
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 293393522}
-          m_ObjectArgumentAssemblyTypeName: IdentificationCard.IdentificationCard,
-            Assembly-CSharp
+          m_ObjectArgument: {fileID: 1461290276}
+          m_ObjectArgumentAssemblyTypeName: NPC.Npc, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2283,7 +2282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &784098578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3951,7 +3950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1365876654
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4488,11 +4487,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1461290273 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 904862021324665994, guid: 6b25ab0b49eeac94290debd70e8a0dd7, type: 3}
+--- !u!114 &1461290276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 904862021324665995, guid: 6b25ab0b49eeac94290debd70e8a0dd7, type: 3}
   m_PrefabInstance: {fileID: 1851269270}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b773028a221240228a1cc90fa733e53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1461290279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 904862021324665991, guid: 6b25ab0b49eeac94290debd70e8a0dd7, type: 3}
@@ -6226,7 +6231,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -6284,8 +6289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprites:
   - {fileID: 21300000, guid: 17997aef887a88c4fa7bb4e5decb2ee0, type: 3}
-  npcPrefab: {fileID: 1461290273}
-  npcComponent: {fileID: 0}
+  npc: {fileID: 1461290276}
 --- !u!4 &1965149060
 Transform:
   m_ObjectHideFlags: 0

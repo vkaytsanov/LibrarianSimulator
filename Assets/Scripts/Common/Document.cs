@@ -18,12 +18,12 @@ namespace Common {
 				_rigidbody.Sleep();
 			}
 			else {
-				NPC.NPC npc = other.gameObject.GetComponent<NPC.NPC>();
-				if (npc) {
+				NPC.Npc np = other.gameObject.GetComponent<NPC.Npc>();
+				if (np) {
 					if (currentState == ObjectState.Falling && _isChecked) {
 						gameObject.SetActive(false);
 						_isChecked = false;
-						npc.HandleItemCollect();
+						np.HandleItemCollect();
 					}
 				}
 			}

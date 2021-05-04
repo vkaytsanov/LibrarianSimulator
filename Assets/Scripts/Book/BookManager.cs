@@ -34,12 +34,12 @@ namespace Book {
 		}
 
 		public void OnSearchButtonClick(TMP_InputField field) {
-			if (field.text == "" || !NPCManager.Instance.DoTitleMatch(field.text)) {
+			if (field.text == "" || !NpcManager.Instance.DoTitleMatch(field.text)) {
 				Debug.Log("Book not found.");
 				field.image.color = Color.red;
 			}
 			else {
-				Spawn(_spawnVector, NPCManager.Instance.npcComponent.actionInfo);
+				Spawn(_spawnVector, NpcManager.Instance.npc.Data.Action.Info);
 				Debug.Log("Book found.");
 				field.image.color = Color.green;
 			}

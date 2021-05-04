@@ -1,24 +1,23 @@
-﻿using System;
-using Book;
+﻿using Book;
 using Dialog;
-using UniversityCard;
 using UnityEngine;
 
 namespace NPC {
 
 	[RequireComponent(typeof(SpriteRenderer), typeof(Animator))]
-	public class NPC : MonoBehaviour {
+	public class Npc : MonoBehaviour {
 		private Animator _animator;
 		private SpriteRenderer _spriteRenderer;
 		[SerializeField] private IdentificationCard.IdentificationCard identificationCard;
 		[SerializeField] private UniversityCard.UniversityCard universityCard;
+		[HideInInspector] public NpcData Data;
+
 		private const float MovingSpeed = 5.0f;
+
 
 		public int ItemsToCollect;
 
 		private bool _isMoving = false;
-		public NPCAction action;
-		public string actionInfo;
 
 
 		private bool _isLeaving;
@@ -50,26 +49,19 @@ namespace NPC {
 
 		private void UseAction() {
 			DialogManager.Instance.StartDialog(
-				new Dialog.DialogueSequence(new[] {
-						DialogDB.GetRandomSentence(action, actionInfo)
-					}
-				)
-			);
-			switch (action) {
-				case NPCAction.WantingBook:
-					universityCard.Spawn(transform.position,
-						_spriteRenderer.sprite);
+				new Dialogue(DialogDB.GetRandomSentence((NpcDialogueType) Data.Action.Type, Data.Action.Info)));
+			switch (Data.Action.Type) {
+				case ActionType.WantingBook:
+					universityCard.Spawn(transform.position, Data);
 					ItemsToCollect += 2;
 					break;
-				case NPCAction.ReturningBook:
-					universityCard.Spawn(transform.position,
-						_spriteRenderer.sprite);
-					BookManager.Instance.Spawn(transform.position + Vector3.right, actionInfo);
+				case ActionType.ReturningBook:
+					universityCard.Spawn(transform.position, Data);
+					BookManager.Instance.Spawn(transform.position + Vector3.right, Data.Action.Info);
 					ItemsToCollect += 1;
 					break;
-				case NPCAction.Registration:
-					identificationCard.SpawnFromCharacter(transform.position,
-						_spriteRenderer.sprite);
+				case ActionType.Registration:
+					identificationCard.SpawnFromCharacter(transform.position, Data);
 					ItemsToCollect += 2;
 					break;
 			}
@@ -80,12 +72,15 @@ namespace NPC {
 			_isLeaving = true;
 		}
 
-		public void SetToComing() {
+		public void SetToComing(NpcData data) {
+			Data = data;
+			_spriteRenderer.sprite = data.Sprite;
 			Debug.Log("SetToComing NPC");
 			_isMoving = true;
 			_isLeaving = false;
 			transform.position = new Vector3(-13, 1, 0);
 		}
+		
 
 		public bool IsKnockedDown() {
 			_animator.SetBool("falling", true);

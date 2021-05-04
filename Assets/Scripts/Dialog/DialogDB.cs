@@ -6,15 +6,23 @@ using Random = UnityEngine.Random;
 
 namespace Dialog {
 
+	public enum NpcDialogueType : sbyte{
+		ReturningBook = 0,
+		WantingBook = 1,
+		Registration = 2
+	}
+	
 	public static class DialogDB {
-		private static readonly List<string> ReturningBooks = new List<string>();
-		private static readonly List<string> WantingBooks = new List<string>();
-		private static readonly List<string> Registration = new List<string>();
+		private const int TypesCount = 3;
+		private static readonly List<string>[] Dialogues = new List<string>[TypesCount];
 
 		static DialogDB() {
-			ParseSentences(ReturningBooks, "returning_books");
-			ParseSentences(WantingBooks, "wanting_books");
-			ParseSentences(Registration, "registration");
+			for (int i = 0; i < TypesCount; i++) {
+				Dialogues[i] = new List<string>();
+			}
+			ParseSentences(Dialogues[(int) NpcDialogueType.ReturningBook], "returning_books");
+			ParseSentences(Dialogues[(int) NpcDialogueType.WantingBook], "wanting_books");
+			ParseSentences(Dialogues[(int) NpcDialogueType.Registration], "registration");
 		}
 
 		private static void ParseSentences(List<string> db, string fileName) {
@@ -27,27 +35,16 @@ namespace Dialog {
 			sr.Close();
 		}
 
-		public static string GetRandomSentence(NPCAction action, string actionInfo) {
-			string formattedSentence;
-			switch (action) {
-				case NPCAction.ReturningBook:
-					formattedSentence = ReturningBooks[Random.Range(0, ReturningBooks.Count)];
-					break;
-				case NPCAction.WantingBook:
-					formattedSentence = WantingBooks[Random.Range(0, WantingBooks.Count)];
-					break;
-				case NPCAction.Registration:
-					formattedSentence = Registration[Random.Range(0, Registration.Count)];
-					break;
-				default:
-					throw new NotImplementedException();
+		public static string GetRandomSentence(NpcDialogueType type, string additionalInfo) {
+			
+			int idx = (int) type;
+			string sentence = Dialogues[idx][Random.Range(0, Dialogues[idx].Count)];
+
+			if (sentence.HasPlaceholder()) {
+				sentence = String.Format(sentence, additionalInfo);
 			}
 
-			if (formattedSentence.HasPlaceholder()) {
-				formattedSentence = String.Format(formattedSentence, actionInfo);
-			}
-
-			return formattedSentence;
+			return sentence;
 		}
 	}
 

@@ -42,12 +42,12 @@ namespace Book
             }
             else
             {
-                NPC.NPC npc = other.gameObject.GetComponent<NPC.NPC>();
+                NPC.Npc npc = other.gameObject.GetComponent<NPC.Npc>();
                 if (npc)
                 {
                     if (currentState == ObjectState.Falling && _isStamped)
                     {
-                        if (npc.actionInfo.Equals(_requestTitle)) {
+                        if (npc.Data.Action.Info.Equals(_requestTitle)) {
                             Destroy(gameObject);
                             npc.HandleItemCollect();
                         }
