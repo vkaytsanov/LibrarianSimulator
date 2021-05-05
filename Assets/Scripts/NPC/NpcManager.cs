@@ -34,7 +34,7 @@ namespace NPC {
 
 
 		public bool DoTitleMatch(string text) {
-			return string.Compare(npc.Data.Action.Info, text, CultureInfo.CurrentCulture,
+			return string.Compare(npc.Data.Action.Info.Title, text, CultureInfo.CurrentCulture,
 				CompareOptions.IgnoreCase | CompareOptions.IgnoreSymbols) == 0;
 		}
 	}

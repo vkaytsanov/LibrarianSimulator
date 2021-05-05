@@ -10,14 +10,14 @@ namespace NPC {
 		private SpriteRenderer _spriteRenderer;
 		[SerializeField] private IdentificationCard.IdentificationCard identificationCard;
 		[SerializeField] private UniversityCard.UniversityCard universityCard;
-		[HideInInspector] public NpcData Data;
+		public NpcData Data;
 
 		private const float MovingSpeed = 5.0f;
 
 
-		public int ItemsToCollect;
+		[HideInInspector] public int itemsToCollect;
 
-		private bool _isMoving = false;
+		private bool _isMoving;
 
 
 		private bool _isLeaving;
@@ -49,20 +49,20 @@ namespace NPC {
 
 		private void UseAction() {
 			DialogManager.Instance.StartDialog(
-				new Dialogue(DialogDB.GetRandomSentence((NpcDialogueType) Data.Action.Type, Data.Action.Info)));
+				new Dialogue(DialogDB.GetRandomSentence((NpcDialogueType) Data.Action.Type, Data.Action.Info.Title)));
 			switch (Data.Action.Type) {
 				case ActionType.WantingBook:
 					universityCard.Spawn(transform.position, Data);
-					ItemsToCollect += 2;
+					itemsToCollect += 2;
 					break;
 				case ActionType.ReturningBook:
 					universityCard.Spawn(transform.position, Data);
 					BookManager.Instance.Spawn(transform.position + Vector3.right, Data.Action.Info);
-					ItemsToCollect += 1;
+					itemsToCollect += 1;
 					break;
 				case ActionType.Registration:
 					identificationCard.SpawnFromCharacter(transform.position, Data);
-					ItemsToCollect += 2;
+					itemsToCollect += 2;
 					break;
 			}
 		}
@@ -88,10 +88,20 @@ namespace NPC {
 		}
 
 		public void HandleItemCollect() {
-			ItemsToCollect--;
-			if (ItemsToCollect == 0) {
+			itemsToCollect--;
+			if (itemsToCollect == 0) {
 				SetToLeaving();
 			}
+		}
+		
+		public void OnBookScan() {
+			DialogManager.Instance.OnBookScannedFail();
+			// if (Data.Action.Info.BookReturnState == BookReturnState.Expired) {
+			// 	DialogManager.Instance.OnBookScannedFail();
+			// }
+			// else {
+			// 	DialogManager.Instance.OnBookScannedSuccess();
+			// }
 		}
 	}
 

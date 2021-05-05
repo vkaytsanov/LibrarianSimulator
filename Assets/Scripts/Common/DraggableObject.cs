@@ -12,8 +12,8 @@ namespace Common {
 		protected SpriteRenderer _spriteRenderer;
 		protected Rigidbody2D _rigidbody;
 		protected BoxCollider2D _boxCollider;
-		protected Vector3 screenPoint;
-		protected Vector3 offset;
+		private Vector3 _screenPoint;
+		private Vector3 _offset;
 		public ObjectState currentState = ObjectState.InitialFalling;
 
 		protected virtual void Start() {
@@ -23,11 +23,11 @@ namespace Common {
 		}
 
 		protected virtual void OnMouseDown() {
-			screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+			_screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
-			offset = gameObject.transform.position -
+			_offset = gameObject.transform.position -
 			         Camera.main.ScreenToWorldPoint(
-				         new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+				         new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z));
 
 			_rigidbody.WakeUp();
 
@@ -35,9 +35,9 @@ namespace Common {
 		}
 
 		protected virtual void OnMouseDrag() {
-			Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
+			Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _screenPoint.z);
 
-			Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
+			Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + _offset;
 			transform.position = curPosition;
 			currentState = ObjectState.Dragged;
 		}

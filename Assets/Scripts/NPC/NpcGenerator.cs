@@ -15,6 +15,7 @@ namespace NPC {
 			npcData.Sex = GenerateRandomSex();
 			npcData.FirstName = GenerateRandomFirstName(npcData.Sex);
 			npcData.LastName = NamesDB.GetRandomName(NameType.Family);
+			npcData.Action = GenerateRandomAction();
 			return npcData;
 		}
 
@@ -90,14 +91,21 @@ namespace NPC {
 		public static NpcAction GenerateRandomAction() {
 			// TODO
 			NpcAction action = new NpcAction();
-			action.Type = ActionType.Registration;
+			action.Type = ActionType.ReturningBook;
 			// npcComponent.actionType = (ActionType) Random.Range(0, 2);
 
 			if (action.Type == ActionType.WantingBook) {
-				action.Info = BooksDB.GetRandomFictionBookCharacteristics().Title;
+				action.Info = BooksDB.GetRandomFictionBookCharacteristics();
 			}
 			else if (action.Type == ActionType.ReturningBook) {
-				action.Info = BooksDB.GetRandomFictionBookCharacteristics().Title;
+				action.Info = BooksDB.GetRandomFictionBookCharacteristics();
+				int percent = Random.Range(0, 11);
+				if (percent < 9) {
+					action.Info.BookReturnState = BookReturnState.Ok;
+				}
+				else {
+					action.Info.BookReturnState = BookReturnState.Expired;
+				}
 			}
 
 			return action;

@@ -10,11 +10,13 @@ namespace Book {
 		Ok
 	}
 
-	public class BookCharacteristics : IComparable<BookCharacteristics> {
+	public class BookData : IComparable<BookData> {
 		public readonly string Title;
 		public readonly string Author;
+		public Sprite Sprite;
+		public BookReturnState BookReturnState;
 
-		public BookCharacteristics(string title, string author) {
+		public BookData(string title, string author) {
 			Title = title;
 			Author = author;
 		}
@@ -23,7 +25,7 @@ namespace Book {
 			return "Title: " + Title + ", Author: " + Author;
 		}
 
-		protected bool Equals(BookCharacteristics other) {
+		protected bool Equals(BookData other) {
 			return Title == other.Title;
 		}
 
@@ -31,7 +33,7 @@ namespace Book {
 			return Title == other;
 		}
 
-		public int CompareTo(BookCharacteristics other) {
+		public int CompareTo(BookData other) {
 			if (other == null) return 1;
 			return Title.CompareTo(other.Title);
 		}
@@ -40,20 +42,20 @@ namespace Book {
 			if (ReferenceEquals(null, obj)) return false;
 			if (ReferenceEquals(this, obj)) return true;
 			if (obj.GetType() != this.GetType()) return false;
-			return CompareTo((BookCharacteristics) obj) < 0;
+			return CompareTo((BookData) obj) < 0;
 		}
 
 		public override int GetHashCode() {
 			return (Title != null ? Title.GetHashCode() : 0);
 		}
 
-		private sealed class TitleEqualityComparer : IComparer<BookCharacteristics> {
-			public int Compare(BookCharacteristics x, BookCharacteristics y) {
+		private sealed class TitleEqualityComparer : IComparer<BookData> {
+			public int Compare(BookData x, BookData y) {
 				return String.Compare(x.Title, y.Title, StringComparison.OrdinalIgnoreCase);
 			}
 		}
 
-		public static IComparer<BookCharacteristics> TitleComparer { get; } = new TitleEqualityComparer();
+		public static IComparer<BookData> TitleComparer { get; } = new TitleEqualityComparer();
 	}
 
 }

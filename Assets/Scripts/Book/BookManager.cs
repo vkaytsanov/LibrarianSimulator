@@ -9,10 +9,6 @@ namespace Book {
 	public class BookManager : MonoBehaviour {
 		[SerializeField] private Sprite[] sprites;
 		[SerializeField] private GameObject bookPrefab;
-		[SerializeField] private GameObject bookSeal;
-
-
-		private SpriteRenderer _bookSpriteRenderer;
 
 		private Vector3 _spawnVector;
 
@@ -29,7 +25,6 @@ namespace Book {
 
 		// Start is called before the first frame update
 		void Start() {
-			_bookSpriteRenderer = bookPrefab.GetComponent<SpriteRenderer>();
 			_spawnVector = Camera.main.ViewportToWorldPoint(new Vector3(0.65f, 1.2f, 0.5f));
 		}
 
@@ -52,11 +47,11 @@ namespace Book {
 			field.image.color = Color.white;
 		}
 
-		public void Spawn(Vector3 location, string npcActionInfo) {
-			_bookSpriteRenderer.sprite = GenerateRandomSprite();
-			bookSeal.SetActive(false);
+		public void Spawn(Vector3 location, BookData bookData) {
+			bookData.Sprite = GenerateRandomSprite();
+
 			GameObject spawned = Instantiate(bookPrefab, location, Quaternion.identity);
-			spawned.GetComponent<Book>().OnSpawn(npcActionInfo);
+			spawned.GetComponent<Book>().OnSpawn(bookData);
 		}
 
 
