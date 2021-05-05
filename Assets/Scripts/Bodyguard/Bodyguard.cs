@@ -19,7 +19,6 @@ namespace Bodyguard {
 		private bool _didKnockDownStudent = false;
 		
 		
-		
 		// Start is called before the first frame update
 		void Start() {
 			_animator = GetComponent<Animator>();

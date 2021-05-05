@@ -1,4 +1,5 @@
-﻿using Book;
+﻿using System.Collections;
+using Book;
 using Dialog;
 using UnityEngine;
 
@@ -70,6 +71,11 @@ namespace NPC {
 		public void SetToLeaving() {
 			_isMoving = true;
 			_isLeaving = true;
+			
+			// after bodyguard takes the student away
+			itemsToCollect = 0;
+			identificationCard.gameObject.SetActive(false);
+			universityCard.gameObject.SetActive(false);
 		}
 
 		public void SetToComing(NpcData data) {
@@ -80,7 +86,19 @@ namespace NPC {
 			_isLeaving = false;
 			transform.position = new Vector3(-13, 1, 0);
 		}
-		
+
+		public IEnumerator OnAskedForIdentityCard(float stallTime) {
+			yield return new WaitForSeconds(stallTime);
+			int percent = Random.Range(0, 11);
+			// 70% to give the card, 30% to not
+			if (percent < 7) {
+				identificationCard.SpawnFromCharacter(transform.position, Data);
+				itemsToCollect++;
+			}
+			else {
+				DialogManager.Instance.AddNextDialogue("I don't have it in me.", DialogSide.NpcSide);
+			}
+		}
 
 		public bool IsKnockedDown() {
 			_animator.SetBool("falling", true);
@@ -95,13 +113,12 @@ namespace NPC {
 		}
 		
 		public void OnBookScan() {
-			DialogManager.Instance.OnBookScannedFail();
-			// if (Data.Action.Info.BookReturnState == BookReturnState.Expired) {
-			// 	DialogManager.Instance.OnBookScannedFail();
-			// }
-			// else {
-			// 	DialogManager.Instance.OnBookScannedSuccess();
-			// }
+			if (Data.Action.Info.BookReturnState == BookReturnState.Expired) {
+				DialogManager.Instance.OnBookScannedFail();
+			}
+			else {
+				DialogManager.Instance.OnBookScannedSuccess();
+			}
 		}
 	}
 
